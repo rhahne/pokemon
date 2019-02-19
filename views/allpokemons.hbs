@@ -1,0 +1,11 @@
+<h1>Welcome to my Pokemon Arsenal </h1>
+<h2>List of all of the Pokemons:</h2>
+<ul>
+{{#each listOfPokemon.data.results}}
+  <li>
+    <a href="pokemon?pokemon={{this.name}}">
+      {{this.name}}
+    </a>
+  </li>
+{{/each}}
+</ul>
